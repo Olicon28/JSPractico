@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | Curso práctico Javascript</title>
+    
+    <link href="./assets/css/figuras.css" rel="stylesheet"/>
+    <script src="./assets/js/figuras.js"></script>
+
+</head>
+<body class="figuras">
+    <header class="container center">
+        <h1>Figuras geométricas</h1>
+        <p>Este es mi primer proyecto en el Challenge JS de Platzi</p>
+    </header>
+    <section class="section-box container center">
+        <div class="row">
+            <div class="col cuadrado">
+                    <h2>Cuadrado</h2>
+                    <div>
+                        <label for="ladoCuadrado">
+                            Ingrese el 1 lado del cuadrado
+                        </label>
+                        <input class="cuadrado_ladoCuadrado" id="ladoCuadrado" type="number" name="ladoCuadrado"/>
+                    </div>
+                    <button onclick="calcularPerimetroCuadrado();">Calcular Perímetro</button>
+                    <button onclick="calcularAreaCuadrado();">Calcular Área</button>
+                    <div id="cuadrado_resultado" class="resultado">
+                        <p></p>
+                    </div>
+            </div>
+            <div class="col circulo">
+                    <h2>Círculo</h2>
+                    <div>
+                        <label for="radioCirculo">
+                            Ingrese el radio del círculo
+                        </label>
+                        <input class="circulo_radioCirculo" id="radioCirculo" type="number" name="radioCirculo"/>
+                    </div>
+                    <button onclick="calcularPerimetroCirculo();">Calcular Perímetro</button>
+                    <button onclick="calcularAreaCirculo();">Calcular Área</button>
+                    <button onclick="calcularDiametroCirculo();">Calcular Diámetro</button>
+                    <div id="circulo_resultado" class="resultado">
+                        <p></p>
+                    </div>
+            </div>
+            <div class="col triangulo">
+                    <h2>Triángulo</h2>
+                    <div>
+                        <label for="triangulo_lado1">
+                            Ingrese el lado 1 del triángulo
+                        </label>
+                        <input class="triangulo_lado" id="triangulo_lado1" type="number" name="radioCirculo"/>
+                    </div>
+                    <div>
+                        <label for="triangulo_lado2">
+                            Ingrese el lado 2 del triángulo
+                        </label>
+                        <input class="triangulo_lado" id="triangulo_lado2" type="number" name="radioCirculo"/>
+                    </div>
+                    <div>
+                        <label for="triangulo_lado2">
+                            Ingrese el base del triángulo
+                        </label>
+                        <input class="triangulo_lado" id="triangulo_base" type="number" name="radioCirculo"/>
+                    </div>
+                    <button onclick="calcularPerimetroTriangulo();">Calcular Perímetro</button>
+                    <button onclick="calcularAreaTriangulo();">Calcular Área</button>
+                    <div id="triangulo_resultado" class="resultado">
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="container center">
+        <h6>Realizado por Álvaro Concha para Platzi</h6>
+
+    </footer>
+</body>
+</html>
